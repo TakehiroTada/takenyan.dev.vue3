@@ -437,7 +437,7 @@
     "@vue/compiler-core" "3.0.0-beta.12"
     "@vue/shared" "3.0.0-beta.12"
 
-"@vue/compiler-sfc@^3.0.0-beta.1":
+"@vue/compiler-sfc@^3.0.0-beta.12":
   version "3.0.0-beta.12"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.0.0-beta.12.tgz#ed93aa0f07d5d099cea7582118e05fbb7c77b1c6"
   integrity sha512-YtX7SJdk68eKPwcL0u515MjOerMSao5UrM0EtL5zxLlQUiokmqxddxALEM28C62CoUonAWr8CWqnb262u0DBoA==
@@ -7949,7 +7949,7 @@ vue-loader@^16.0.0-alpha.3:
     merge-source-map "^1.1.0"
     source-map "^0.6.1"
 
-vue-router@^4.0.0-alpha.5:
+vue-router@^4.0.0-alpha.11:
   version "4.0.0-alpha.11"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.0-alpha.11.tgz#17b0f31ae6b0284ee0895b03904cf1738989aa0e"
   integrity sha512-GEgKq7rlwdv03QcGqADZg+Es8D6R8FfZRLSj0Ardx/sK8PiIxpt5ViwW94Zh2LuIEiuM1U5v8iyTBya0UBK61g==
@@ -7967,7 +7967,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^3.0.0-beta.1:
+vue@^3.0.0-beta.12:
   version "3.0.0-beta.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.0.0-beta.12.tgz#e72d1baeede285768d2df0f2b52dc79427f49419"
   integrity sha512-4Y8LPplndYp48q1P8CSbG3Et/bPcMQB11edusA6SuIGmgrLdS4Ntdwpjtc9kglYHaY9/E/VTVjl4jAGqpAFR1w==
