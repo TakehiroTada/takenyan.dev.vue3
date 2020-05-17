@@ -20,4 +20,11 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+/* FIXME: normalizeではulのスタイルがリセットしきれていない */
+
+ol,
+ul {
+  list-style: none;
+}
+</style>
