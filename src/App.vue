@@ -2,7 +2,7 @@
   <article>
     <Header />
     <router-view />
-    <footer></footer>
+    <Footor />
   </article>
 </template>
 
@@ -10,11 +10,13 @@
 import { defineComponent } from "vue";
 import "normalize.css"; //reset css
 import Header from "@/components/Header.vue";
+import Footor from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    Header
+    Header,
+    Footor
   }
   // setup() {}
 });
