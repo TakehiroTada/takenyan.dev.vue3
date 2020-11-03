@@ -2,20 +2,22 @@
   <div class="container">
     <section class="main-frame">
       <TheHamburgerIcon />
-      <div class="main-frame__title">
+      <div class="main-frame__title effect-fade">
         <h1 class="main-frame__title__name">Takehiro Tada</h1>
         <h2 class="main-frame__title__business">Frontend-Engineer</h2>
       </div>
     </section>
     <section class="work-frame">
-      <figure class="work-frame__image-wrapper">
-        <img
+      <div class="work-frame__image-wrapper">
+        <WorkCard
           v-for="n in 6"
           :key="n"
-          src="../assets/content.png"
-          alt="work-image"
+          title="Inverness McKenzie"
+          content="The only skills I have the patience to learn are those that have no real application in life."
+          image-url="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample108.jpg"
+          link="/"
         />
-      </figure>
+      </div>
     </section>
   </div>
 </template>
@@ -23,12 +25,15 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import TheHamburgerIcon from "../components/TheHamburgerIcon.vue";
+import WorkCard from "@/components/WorkCard.vue";
+
 // import { useRouter } from "vue-router";
 
 export default defineComponent({
   name: "Home",
   components: {
-    TheHamburgerIcon
+    TheHamburgerIcon,
+    WorkCard
   },
   setup() {
     // const router = useRouter();
@@ -42,6 +47,7 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
 }
+
 .main-frame {
   display: flex;
   justify-content: center;
@@ -89,8 +95,30 @@ export default defineComponent({
   height: 100%;
   position: absolute;
   top: -80px;
-  img {
-    margin: 4px;
+  display: flex;
+  flex-wrap: wrap;
+
+  figure {
+    margin: 8px;
+  }
+}
+
+.effect-fade {
+  font-size: 20px;
+  font-weight: bold;
+  animation-name: fadein;
+  animation-duration: 1s;
+  //animation-iteration-count: infinite;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>

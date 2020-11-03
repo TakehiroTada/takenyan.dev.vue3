@@ -1,22 +1,22 @@
 <template>
   <article>
-    <Header />
+    <!--    <Header />-->
     <router-view />
-    <Footor />
+    <Footer />
   </article>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import "normalize.css"; //reset css
-import Header from "@/components/Header.vue";
-import Footor from "@/components/Footer.vue";
+// import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    Header,
-    Footor
+    // Header,
+    Footer
   }
   // setup() {}
 });

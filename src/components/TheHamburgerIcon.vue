@@ -4,7 +4,7 @@
       <span></span>
   </button>-->
   <div class="container">
-    <button @click="pushed" type="button" class="before">
+    <button type="button" class="before" @click="pushed">
       <transition name="mid">
         <span v-if="state.checked" class="line"></span>
       </transition>
